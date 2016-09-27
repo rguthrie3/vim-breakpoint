@@ -37,7 +37,7 @@ function! s:SetBreakpoint()
     let filename = expand("%:p")
     let linenumber = line(".")
     echo "Adding breakpoint"
-    call add(s:BreakpointLocations, "b " . filename . ":" . linenumber . "\n")
+    call add(s:BreakpointLocations, "b " . filename . ":" . linenumber)
 endfunction
 
 function! s:WriteBreakpointsToFile()
