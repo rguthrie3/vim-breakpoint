@@ -47,7 +47,7 @@ function! s:WriteBreakpointsToFile()
 endfunction
 
 function! s:ClearBreakpoints()
-    s:BreakpointLocations = [ ]
+    let s:BreakpointLocations = [ ]
     call delete(g:breakpoint_script_file)
 endfunction
 
